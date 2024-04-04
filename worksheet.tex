@@ -7,21 +7,24 @@
 
 
 \begin{document}
+Environment variables are an essential part of software development, allowing configurations and settings to be saved and managed outside the program code. They provide a flexible method of adapting the behavior of programs under different operating systems and in different environments without having to change the source code. This is particularly useful for the configuration of programs that require access to resources whose paths or settings may differ from system to system, or for the transmission of sensitive information such as API keys or passwords that should not be stored in the source code.
 
-\url{https://joequery.me/code/environment-variable-c/#:~:text=The%20function%20in%20charge%20of,not%20exist%2C%20getenv%20returns%20NULL.}
 
 \section*{Exercises}
 \begin{aufgabe}
-    Write a C program, that sets an environment variable.
+    First, inspect the environment variables that are already set in your system. You can do that from the terminal using \texttt{printenv} or \texttt{env} or \texttt{echo \$<VARNAME>}. Also, you can add a new environment variable from the terminal using \texttt{export <NAME>='<value>'}
+\end{aufgabe}
+\begin{aufgabe}
+    Now, we want to perform similar tasks with a C-Program. Write a program that sets an environment variable. For example, define a variable holding your GitHub username. When you are done, run it and check if the variable is correctly set.
 \end{aufgabe}
 
 \begin{aufgabe}
-    Write a C program, that reads an environment variable.
+    Usually we also want to work with environment variables, like the current path we are in or using Tokens that should be kept on one machine. Write a C-Program that reads the variable you have set earlier and write the output to the terminal.
 \end{aufgabe}
 
 \section*{Anmerkungen}
 \begin{enumerate}
-    \item Retrieving environment variables in C: \url{https://joequery.me/code/environment-variable-c/#:~:text=The%20function%20in%20charge%20of,not%20exist%2C%20getenv%20returns%20NULL.}
+    \item Retrieving environment variables in C: \url{https://joequery.me/code/environment-variable-c}
 \end{enumerate}
 
 \end{document}
